@@ -8,7 +8,7 @@ public class Main {
             if(clientDeviceYear>=2015) {
                 System.out.println("Установите версию для IOS по ссылке.");
             }else {
-                System.out.println("Установите обглеченную версию приложения для IOS по ссылке.");
+                System.out.println("Установите облгеченную версию приложения для IOS по ссылке.");
             }
         }else if (clientDeviceYear>=2015){
             System.out.println("Установите версию для Android по ссылке.");
@@ -21,20 +21,20 @@ public class Main {
 
         boolean checkYear = year>1584&&year%4==0&&year%400==0;
         if (checkYear){
-            System.out.println(year+" год являеться високосным.");
+            System.out.println(year+" год является високосным.");
         }else {
-            System.out.println(year+" год не являеться високосным.");
+            System.out.println(year+" год не является високосным.");
         }
         // Задача 4
 
         int deliveryDistance = 95;
         int deliveryDay = 1;
         if (deliveryDistance<=20){
-            System.out.println("Потребуеться дней: 1");
+            System.out.println("Потребуется дней: 1");
         }else if (deliveryDistance<=60){
-            System.out.println("Потребуеться дней: 2");
+            System.out.println("Потребуется дней: 2");
         }else if (deliveryDistance<=100){
-            System.out.println("Потребуеться дней: 3");
+            System.out.println("Потребуется дней: 3");
         }else {
             System.out.println("Доставки нет");
         }
@@ -52,10 +52,10 @@ public class Main {
                 System.out.println("Лето.");
                 break;
             case 9,10,11:
-                System.out.println("Осень");
+                System.out.println("Осень.");
                 break;
             default:
-                System.out.println("Не правильный номер месяца.");
+                System.out.println("Неправильный номер месяца.");
         }
     }
 }
