@@ -17,9 +17,9 @@ public class Main {
         }
         // Задача 3
 
-        int year = 1604;
+        int year = 1900;
 
-        boolean checkYear = year>1584&&year%4==0||year%400==0;
+        boolean checkYear = year>1584&&(year%100!=0||year%400==0)&&year%4==0;
         if (checkYear){
             System.out.println(year+" год является високосным.");
         }else {
