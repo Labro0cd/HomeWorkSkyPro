@@ -38,7 +38,7 @@ public class Main {
             total = total + salary;
             System.out.println("Месяц "+i+", сумма накоплений равна "+total+" рублей.");
         }
-        int composition = 0;
+        int composition;
         for (int i = 1; i <= 10; i++) {
             composition = 2*i;
             System.out.println("2*"+i+"="+composition);
