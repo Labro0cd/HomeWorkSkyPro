@@ -5,16 +5,16 @@ public class Main {
         double[] number2 = new double[]{1.57,7.654,9.986};
         int[] number3 = new int[]{1,2,3,4,5,6,7,8,9,10};
         // Задача 2
-        for (int i = 0; i < number1.length; i++) {
-            System.out.print(number1[i]+" ");
+        for (int k : number1) {
+            System.out.print(k + " ");
         }
         System.out.println();
-        for (int i = 0; i < number2.length; i++) {
-            System.out.print(number2[i]+" ");
+        for (double v : number2) {
+            System.out.print(v + " ");
         }
         System.out.println();
-        for (int i = 0; i < number3.length; i++) {
-            System.out.print(number3[i]+" ");
+        for (int j : number3) {
+            System.out.print(j + " ");
         }
         System.out.println();
 
