@@ -1,43 +1,50 @@
 public class Main {
     public static void main(String[] args) {
+
         // Задача 1
-        int[] number1 = new int[]{1,2,3};
-        double[] number2 = new double[]{1.57,7.654,9.986};
-        int[] number3 = new int[]{1,2,3,4,5,6,7,8,9,10};
+
+        int arrMonth[] = new int[]{100_000, 50_000, 30_000, 55_000, 10_000};
+        int total = 0;
+        for (int i = 0; i < arrMonth.length; i++) {
+            final int k = arrMonth[i];
+            total +=k;
+        }
+        System.out.println("Сумма трат за месяц составила: "+total+" рублей.");
+
         // Задача 2
-        for (int k : number1) {
-            System.out.print(k + " ");
+
+        int arrWeek[] = new int[]{5_000, 1_000, 20_000, 11_000, 4_000};
+        int maxWaste = 0;
+
+        for (int item : arrWeek) {
+            if (item > maxWaste) {
+                maxWaste = item;
+            }
         }
-        System.out.println();
-        for (double v : number2) {
-            System.out.print(v + " ");
+        int minWaste = maxWaste;
+        for (int value : arrWeek) {
+            if (value < minWaste) {
+                minWaste = value;
+            }
         }
-        System.out.println();
-        for (int j : number3) {
-            System.out.print(j + " ");
-        }
-        System.out.println();
+        System.out.println("Минимальная сумма трат за неделю составила "+minWaste+" рублей. Максимальная сумма трат за неделю составила "+maxWaste+" рублей.");
 
         // Задача 3
 
-        for (int i = number1.length-1 ; i >= 0; i--) {
-            System.out.print(number1[i]+" ");
+        int[] arr3 = {20_000, 30_000, 100_000, 34_000, 123_001};
+        int totalArr3 = 0;
+        for (int j : arr3) {
+            totalArr3 += j;
         }
-        System.out.println();
-        for (int i = number2.length-1; i >= 0; i--) {
-            System.out.print(number2[i]+" ");
-        }
-        System.out.println();
-        for (int i = number3.length-1; i >= 0; i--) {
-            System.out.print(number3[i]+" ");
-        }
-        System.out.println();
+        double middleTotal = (double) totalArr3/arr3.length;
+        System.out.println("Средняя сумма трат за месяц составила "+middleTotal+" рублей.");
+
         // Задача 4
-        for (int i = 0; i < number3.length; i++) {
-            if (number3[i] % 2 > 0) {
-                number3[i]+=1;
-            }
-            System.out.print(number3[i]+" ");
+
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length-1; i >= 0; i--) {
+            final char k = reverseFullName[i];
+            System.out.print(k);
         }
     }
 }
